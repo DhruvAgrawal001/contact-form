@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "75c1b217-80fe-4709-99c9-1726b0145740",
+		"name": "Vernan Contact API",
+		"description": "Postman dump for Contact Us API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49906590",
+		"_collection_link": "https://dhruvagrawal001-6044569.postman.co/workspace/Dhruv's-Workspace~943bf6db-b605-4100-82a3-7cf946fba8b4/collection/49906590-75c1b217-80fe-4709-99c9-1726b0145740?action=share&source=collection_link&creator=49906590"
+	},
+	"item": [
+		{
+			"name": "Submit Contact Form",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"hsatyamrav@gmail.com\",\n    \"message\": \"kjhgcgj\",\n    \"name\": \"Amit\",\n    \"phone\": \"908765498\"\n}"
+				},
+				"url": {
+					"raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+					"protocol": "https",
+					"host": [
+						"vernanbackend",
+						"ezlab",
+						"in"
+					],
+					"path": [
+						"api",
+						"contact-us",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
