@@ -30,9 +30,9 @@ function App() {
   const validateForm = () => {
     const newErrors = {};
     
-    if (!formData.name.trim()) newErrors.name = 'Name is required';
+    if (!formData.name.trim()) newErrors.name = 'Full name is required';
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = 'Email address is required';
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address';
     }
@@ -64,11 +64,9 @@ function App() {
         setFormData({ name: '', email: '', phone: '', message: '' });
         setErrors({});
       } else {
-        console.error('Submission failed');
         setErrors({ submit: 'Submission failed. Please try again.' });
       }
     } catch (error) {
-      console.error('Error:', error);
       setErrors({ submit: 'Network error. Please check your connection and try again.' });
     } finally {
       setIsLoading(false);
